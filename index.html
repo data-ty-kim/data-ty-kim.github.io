@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>My Portfolio</title>
+    <meta name="description" content="A class-less example, without dependencies.">
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css"
+    >
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>👋 Hi, I'm Jane Doe</h1>
+        <p>Frontend Developer | UI/UX Enthusiast | Coffee Lover</p>
+        <nav>
+          <a href="index-ko.html">🇰🇷 한국어 보기</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate frontend developer with a knack for clean, intuitive
+          interfaces. I enjoy bringing designs to life with HTML, CSS, and
+          JavaScript.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>Portfolio Website</h3>
+          <p>A minimal personal portfolio built with Pico.css.</p>
+          <a href="#" role="button">View Project</a>
+        </article>
+        <article>
+          <h3>Weather App</h3>
+          <p>Simple weather forecast app using OpenWeatherMap API.</p>
+          <a href="#" role="button">View Project</a>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <footer>
+        <hr />
+        <p>&copy; 2025 Jane Doe</p>
+      </footer>
+    </main>
+  </body>
+</html>
