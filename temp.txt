@@ -1,0 +1,27 @@
+<link rel="me" href="https://github.com/taeyoonkim">
+<link rel="me" href="https://www.linkedin.com/in/taeyoonkim/">
+
+<meta property="og:title" content="Taeyoon Kim | Data Scientist Portfolio">
+<meta property="og:description" content="Portfolio of Taeyoon Kim, a Data Scientist with a strong foundation in statistics and mathematics.">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yourdomain.com/thumbnail.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taeyoon Kim | Data Scientist Portfolio">
+<meta name="twitter:description" content="Portfolio of Taeyoon Kim, a Data Scientist with a strong foundation in statistics and mathematics.">
+<meta name="twitter:image" content="https://yourdomain.com/thumbnail.png">
+<meta name="twitter:site" content="@your_twitter_handle">
+
+<p>
+  Connect with me on 
+  <a href="https://www.linkedin.com/in/taeyoonkim/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+  and 
+  <a href="https://github.com/taeyoonkim" target="_blank" rel="noopener noreferrer">GitHub</a>.
+</p>
+
+
+
+
+robots.txt랑 sitemap.xml 설정 생각하기
+
