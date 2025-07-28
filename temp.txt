@@ -25,3 +25,12 @@
 
 robots.txt랑 sitemap.xml 설정 생각하기
 
+
+
+cv에서 수학을 강조하였다면, 포트폴리오 프로필에서는 나의 파이썬과 sql 역량을 강조할 것
+
+hard-skill
+soft-skill 
+구분하기
+예: designer와 소통하고 이해하는 역량
+
