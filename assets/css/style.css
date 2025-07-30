@@ -1,0 +1,15 @@
+#more-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#more-text.show {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+#toggle-button {
+    font-weight: bold;
+}
