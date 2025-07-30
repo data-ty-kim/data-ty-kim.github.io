@@ -1,63 +1,30 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>포트폴리오 소개</title>
-  <style>
-    #moreText {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
-    }
-
-    #moreText.show {
-      max-height: 500px; /* 충분히 큰 값으로 설정 */
-      opacity: 1;
-    }
-
-    .toggle-button {
-      margin-top: 10px;
-      cursor: pointer;
-      color: blue;
-      text-decoration: underline;
-      background: none;
-      border: none;
-      font-size: 1em;
-    }
-  </style>
-</head>
-<body>
-
-  <div id="introduction">
+<!-- Modal example -->
+<dialog id="modal-example">
+  <article>
+    <header>
+      <button
+        aria-label="Close"
+        rel="prev"
+        data-target="modal-example"
+        onclick="toggleModal(event)"
+      ></button>
+      <h3>Confirm your action!</h3>
+    </header>
     <p>
-      안녕하세요! 저는 웹 개발과 UX 디자인에 열정을 가지고 있는 [당신의 이름]입니다.
+      Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus
+      pellentesque. Nullam finibus risus non semper euismod.
     </p>
-
-    <div id="moreText">
-      <p>
-        다양한 프론트엔드 프레임워크에 익숙하며, 사용자 중심의 디자인을 통해 직관적인 웹사이트를 만드는 데 집중하고 있습니다.
-        협업과 소통을 중요하게 생각하며, 지속적인 학습을 통해 성장하고자 합니다.
-      </p>
-    </div>
-
-    <button class="toggle-button" onclick="toggleText()">펼치기</button>
-  </div>
-
-  <script>
-    function toggleText() {
-      const moreText = document.getElementById('moreText');
-      const button = document.querySelector('.toggle-button');
-
-      moreText.classList.toggle('show');
-
-      if (moreText.classList.contains('show')) {
-        button.textContent = '접기';
-      } else {
-        button.textContent = '펼치기';
-      }
-    }
-  </script>
-
-</body>
-</html>
+    <footer>
+      <button
+        role="button"
+        class="secondary"
+        data-target="modal-example"
+        onclick="toggleModal(event)"
+      >
+        Cancel</button
+      ><button autofocus data-target="modal-example" onclick="toggleModal(event)">
+        Confirm
+      </button>
+    </footer>
+  </article>
+</dialog>
