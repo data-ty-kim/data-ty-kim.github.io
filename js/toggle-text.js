@@ -1,6 +1,7 @@
 function toggleText() {
     const moreText = document.getElementById('more-text');
     const button = document.getElementById('toggle-button');
+    const lang = document.documentElement.lang;
 
     moreText.classList.toggle('show');
 
