@@ -1,0 +1,54 @@
+<h5>Kaggle - HMS: Harmful Brain Activity Classification</h5>
+
+<dl>
+  <dt><strong>Tool:</strong></dt>
+  <dd>Google Cloud Platform Compute Engine, PyTorch</dd>
+  <dt><strong>Language:</strong></dt>
+  <dd>Python<br></dd>
+  <dt><strong>결과:</strong></dt>
+  <dd>
+    Kullback Lieber divergence 0.38, 0.89 <br> 
+    (답안 두 개 제출, 모두 순위권 밖)
+  </dd>
+  <dt><strong>역할:</strong></dt>
+  <dd>데이터 정제 및 EfficientNet-b2 모델 구축</dd>
+  <dt><strong>배경:</strong></dt>
+  <dd>개인 프로젝트의 일환으로 Kaggle을 하게 되었습니다.</dd>
+</dl>
+
+<strong>난관과 문제점:</strong> 
+<ol>
+  <li>
+    컴퓨팅 자원의 부족
+    <p>
+      딥러닝을 위해 GPU를 비롯한 필수적인 컴퓨팅 자원이 필요하였습니다.
+    </p>
+  </li>
+  <li>
+    의학적 지식의 부족
+    <p>
+      뇌파와 관련된 지식이 전무한 상태에서 뇌파와 관련된 EEG와 Spectrogram 데이터를 다뤄야 했습니다. 해당 데이터를 이해하는 것도 어려웠지만, 무엇보다 어떻게 정제할 것인지 논의가 필요했습니다.
+    </p>
+  </li>
+</ol>
+
+<strong>해결 방안:</strong> 
+<ol>
+  <li>
+    Google Cloud Platform Compute Engine 활용 (이하 GCP)
+    <p>
+      부족한 컴퓨팅 자원을 채우기 위해 GCP를 활용하였습니다. 인스턴스를 발급받아 우분투 운영체제로 구성된 분석서버를 구축하였습니다. GPU는 T4를 활용하였습니다. 개인 PC와 SSH Protocol로 연결하여 VS Code에서 바로 원격으로 분석서버에 접속하였습니다.
+    </p>
+  </li>
+  <li>
+    Discussion과는 다른 방식의 데이터 정제 시도
+    <p>
+      먼저, EEG와 관련된 지식을 획득하려 노력하였습니다. 다음으로 데이터 정제 단계에서 target 별로 세세한 구분을 시도하였습니다. Kaggle에서 Discussion을 확인하였을 때 대부분의 참가자들은 데이터의 중앙만 편집해서 사용하였습니다. 가령, 16분 정도의 Spectrogram 데이터가 있다고 한다면, 3~13분만큼만 발췌하는 방식입니다. 그러나 저와 팀원은 위와 같은 방식의 경우, 의사가 판단하는 지점(target)과 EEG와 Spectrogram에서 발췌하는 지점이 다를 수 있다고 생각하였습니다. 그래서 의사가 판단하는 지점을 다 구분한 다음 해당 영역에서 데이터를 추출하여 정제하였습니다.
+    </p>
+  </li>
+</ol>
+
+<dl>
+  <dt><strong>발전 사항:</strong></dt> 
+  <dd>안타깝게도 저희 팀의 방식은 결과적으로는 좋지 않았습니다. 그러나 문제에 접근하고 해결하는 과정에서 모르는 데이터에 대한 대처법을 익힐 수 있었습니다. 이번 Kaggle Competition에서 생소한 도메인의 데이터(뇌파)를 직접 접하면서 난처함을 겪었지만, 데이터를 열어보면서 어떻게 처리할지 팀원과 적극적으로 의사소통하고, 뇌파 측정과 관련된 지식을 최대한 찾으며 데이터를 이해하려 노력하였습니다. 이러한 노력 끝에 데이터를 저희 나름의 방식으로 정제할 수 있었습니다. </dd>
+</dl>
