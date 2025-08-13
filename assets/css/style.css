@@ -13,3 +13,9 @@
 #toggle-button {
     font-weight: bold;
 }
+
+.img-vw {
+    width: 30vw;
+    display: block;
+    margin: 20px auto;
+}
